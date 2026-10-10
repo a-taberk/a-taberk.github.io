@@ -1,0 +1,75 @@
+@import url('https://iosevka-webfonts.github.io/iosevka/Iosevka.css');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 120%;
+}
+
+body {
+  font-family: "Iosevka Web", monospace;
+  padding: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Light mode */
+  background-color: #cdd0d1;
+  color: #161717;
+}
+/* Normal link */
+a {
+    color: #0066cc;
+}
+
+/* Link when hovered */
+a:hover {
+    color: #ff6600;
+}
+
+/* Link after being visited */
+a:visited {
+    color: Red;
+}
+
+/* While clicking */
+a:active {
+    color: #cc0000;
+}
+
+pre {
+  color: #161717;
+  padding: 16px;
+  overflow-x: auto;
+  border: 1px solid #646566;
+}
+
+code {
+  font-family: monospace;
+}
+
+/* Inline code */
+:not(pre) > code {
+  background-color: #f0f0f0;
+  padding: 2px 5px;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #161717;
+    color: #cdd0d1;
+  }
+
+  pre {
+    background-color: #161717;
+    color: #cdd0d1;
+    border-color: #cdd0d1;
+  }
+
+  :not(pre) > code {
+    background-color: #2a2a2a;
+    color: #cdd0d1;
+  }
+}
